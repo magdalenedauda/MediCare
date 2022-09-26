@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Appointment</title>
+    <link rel="stylesheet" href="../CSS/appointment.css">
+  </head>
+  <style>
+    .navbar{
+    background-color: white;
+  }
+  </style>
+  <body>
+    <nav class="navbar">
+      <img src="../IMAGES/medicare_logo.png" id="logo" alt="Medical Lungs"  width="200"/>
+      <div class="boo">
+        <h1>MEDI<br />CARE</h1>
+      </div>
+      <a href="project.html">HOME</a>
+      <a href="#ab">ABOUT</a>
+      <a href="#demo">SERVICES</a>
+      <div class="dropdown">
+        <button class="drop-btn">
+          <a href="#">OUR DOCTORS</a>
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="">DR. BETHEL</a>
+          <a href="">DR. MAMISA</a>
+          <a href="">DR. NANKO</a>
+          <a href="">DR. MAGDALENE</a>
+          <a href="">DR. MIRACLE</a>
+          <a href="">DR. JANE</a>
+        </div>
+      </div>
+      <a href="#">CONTACT</a>
+      <a href="./login.html" target="_blank">LOG IN</a>
+    </nav>
+  
+
+    <header>
+        <h3>Make an Appointment</h3>
+    </header>
+    <div>
+      <div class="container">
+        <form action="">
+          <label for="">Name</label>
+          <input
+            id="fname"
+            name="firstname"
+            placeholder="Patient full name.."
+            type="text"
+          />
+
+          <!-- <label for="">Email</label>
+          <input
+            id="email"
+            name="email"
+            placeholder="me@example.com"
+            type="text"
+          />
+
+          <label for="">Card Number</label>
+          <input
+            id="cardno"
+            name="card number"
+            placeholder="Patient Card Number"
+            type="text"
+          /> -->
+
+          <label for="subject">Subject</label>
+          <textarea
+            name="comment"
+            id="subject"
+            placeholder="Message"
+            cols="30"
+            rows="10"
+          ></textarea>
+
+          <input type="Submit" value="Submit"/>
+        </form>
+      </div>
+      <a href="./new_patient.html"> <input class="end" type="Submit" value="New Appointment"/></a>
+    </div>
+  </body>
+</html>
