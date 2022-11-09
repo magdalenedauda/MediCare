@@ -1,0 +1,133 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MEDI CARE</title>
+    <link rel="stylesheet" href="{% static 'assets/CSS/PROJECT.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/CSS/footer.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/CSS/new_patient.css' %}" />
+    <!-- <link rel="stylesheet" href="{% static 'assets/CSS/register.css' %}" /> -->
+    <!-- <link rel="stylesheet" href="{% static 'assets/CSS/new.css' %}" /> -->
+    <!-- <link rel="stylesheet" href="{% static 'assets/CSS/appiontment.css' %}" /> -->
+  </head> 
+
+  <body>
+  <section>
+    <nav class="navbar">
+      <img
+        src="{% static 'assets/IMAGES/medicare_logo.png' %}"
+        id="logo"
+        alt="Medical Lungs"
+        width="200"
+      />
+
+      <div class="boo">
+        <h1>MEDICARE</h1>
+      </div>
+      <a href="/home">HOME</a>
+      <a href="/#ab">ABOUT</a>
+      <a href="/#demo">SERVICES</a>
+      <div class="dropdown">
+        <button class="drop-btn">
+          <a href="/doctors">OUR DOCTORS</a>
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="">DR. BETHEL</a>
+            <a href="">DR. MAMISA</a>
+            <a href="">DR. NANKO</a>
+            <a href="dr_magdalene">DR. MAGDALENE</a>
+            <a href="">DR. MIRACLE</a>
+            <a href="">DR. JANE</a>
+        </div>     
+      <a href="/contact">CONTACT</a>
+      <a href="{% url 'login' %}">LOG IN</a>
+        <a href="{% url 'signup' %}">SIGN UP</a>
+    </nav>
+
+
+    {% block content %}
+    
+    {% endblock content %}
+    
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>MEDICARE</h4>
+            <ul>
+              <li><a href="/home">Home</a></li>
+              <li><a href="/#ab">About Us</a></li>
+              <li><a href="/#demo">Services</a></li>
+              <li><a href="/doctors">Our Doctors</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>SERVICES</h4>
+            <ul>
+              <li><a href="#">Neurology</a></li>
+              <li><a href="#">Eye Care</a></li>
+              <li><a href="#">Pulomonary</a></li>
+              <li><a href="#">Cardiology</a></li>
+              <li><a href="#">Dental Care</a></li>
+              <li><a href="#">Gynaecology</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>CONTACT US</h4>
+            <ul>
+              <li><a href="">Address</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li>
+                <a href="mailto:afrikomnigeria@gmail.com"
+                  >Email: support@gmail.com
+                </a>
+              </li>
+              <li><a href="tel:+2348102962820">Call: 08102962820</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>FOLLOW US</h4>
+            <div class="social-links">
+              <li>
+                <a href="https:/facebook.com">
+                  <img src="{% static 'assets/IMAGES/facebook.svg' %}" alt=""/>
+                </a>
+              </li>
+              <li>
+                <a href="https:/twitter.com">
+                  <img src="{% static 'assets/IMAGES/twitter.png' %}" alt=""/>
+                </a>
+              </li>
+              <li>
+                <a href="https:/instagram.com">
+                <img src="{% static 'assets/IMAGES/instagram.svg' %}" alt=""/> 
+                </a>
+              </li>
+              <li>
+                <a href="https:/linkedin.com">
+                <img src=" {% static 'assets/IMAGES/linkedin.svg' %}" alt=""/>
+                </a>
+              </li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="copyright">
+      <p>&copy; 2022 || MediCare Health Team</p>
+      <p>Design by MediCare</p>
+    </div>
+  </section>
+  </body>
+</html>

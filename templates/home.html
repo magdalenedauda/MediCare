@@ -1,0 +1,164 @@
+{% extends 'layout.html' %}
+{% block content %}
+{% load static %}
+<div class="second">
+    <h1>MEDICARE</h1>
+    <h2>
+      We Provide Best <br />
+      Medical Services
+    </h2>
+    <p>
+      At MediCare, our top priority is your<br />good health and well-being we
+      care<br />
+      about ways of how we can serve you better<br />help you navigate through
+      your busy schedule<br />
+      and still organize your medical records.
+    </p>
+
+    <div id="appointment-btn">
+      <a href="/appointment">Book Appointment</a>
+    </div>
+  </div>
+  <!--End of the second div-->
+
+  <div class="third">
+    <div class="hours">
+      <img src="{% static 'assets/Images/telephone.svg' %}" id="logo" alt="telephone" />
+      <h3>24 Hours services</h3>
+      <p>
+        We provide you with an online 24 hours service. Your records are saved
+        and accessible.
+      </p>
+    </div>
+
+    <div class="staff">
+      <img src="{% static 'assets/Images/people.svg' %}" id="logo" alt="professional staff" />
+      <h3>Professional staff</h3>
+      <p>
+        We have the best of Professional services at MediCare. Our staffs are
+        highly experience and efficient. Top quality service is our identity.
+      </p>
+    </div>
+
+    <div class="care">
+      <img src="{% static 'assets/Images/truck.svg' %}" id="logo" alt="truck" />
+      <h3>Emergency care</h3>
+      <p>
+        We provide and make emergency care and aid fully accessible to you at
+        the most time you want it.
+      </p>
+    </div>
+  </div>
+  <!--End of the third div-->
+
+  <div class="forth">
+    <div class="image">
+      <img
+        width="400px"
+        height="500px"
+        style="margin: 10px"
+        src="{% static 'assets/Images/dr1.jpg' %}"
+        alt="Dr Bet"
+      />
+    </div>
+
+    <div class="about" id="ab">
+      <h3>About us</h3>
+      <p>
+        Massive disorientation of cards and files have been observed in most
+        hospital, where patients have to come very early in the morning to
+        drop their cards, make a queue before their files are being sorted out
+        and assembles to see a doctor not minding their seveirity of most
+        cases.
+      </p>
+      <p>
+        Hence, the creation of this website to aid in curbing this problem by
+        means of enabling patients have their database inputed on the website
+        and they won't have to come early to summit cards and be on a queue
+        for a long time just to get their files before seeing a doctor. They
+        book online and when they intend to see a doctor, they book and get a
+        time for an appointment.
+      </p>
+      <p>
+        This website assists in saving time, having easy access to doctor, and
+        patients could even have a one on one online consultation if there is
+        no need for physical examination with their doctor, incase they can't
+        make it to the hospital easy booking and proper organization in
+        hospital.
+      </p>
+    </div>
+  </div>
+  <!--End of the forth div-->
+
+  <section id="demo" class="section">
+    <h3>Services</h3>
+
+    <section class="body">
+      <div class="firth">
+        <div class="neu">
+          <img src="{% static 'assets/Images/index.png' %}" id="logo" alt="" />
+          <h4>Neurology</h4>
+          <p>
+            <!-- Neurology deals with the diagnosis and treatment of all categories -->
+            <!-- of conditions and disease involving the brain, the spinal cord and the peripheral nerves.  -->
+            Our neurologist are specialized in treating diseases of the
+            nervous system, which includes the brain and spinal cord.
+          </p>
+        </div>
+        <div class="eyes">
+          <img src="{% static 'assets/IMAGES/eye-fill.svg' %}" id="logo" alt="eye" />
+          <h4>Eyes Care</h4>
+          <p>
+            We provide a wide range of professional oplithalim services to
+            meet your needs. We provide every service with a smile and to your
+            highest level of satisfaction.
+          </p>
+        </div>
+
+        <div class="pul">
+          <img src="{% static 'assets/Images/lungs.png' %}" id="logo" alt="lung" />
+          <h4>Pulomonary</h4>
+          <p>
+            We evaluate, manage and treat a range of lung condition, from
+            asthma to cancer. Also in sleep disorders, diseases caused by
+            exposure to toxic substances and acute pulomonary problems.
+          </p>
+        </div>
+      </div>
+      <!--End of firth div-->
+
+      <div class="six">
+        <div class="card">
+          <img src="{% static 'assets/Images/heart-pulse-fill.svg' %}" id="logo" alt="heart" />
+          <h4>Cardiology</h4>
+          <p>
+            We provide diagnosis and treatment of cardiovascular system,
+            heart, arteries and viens. You can order for specialized testing
+            to determine which treatment options are best for you.
+          </p>
+        </div>
+
+        <div class="den">
+          <img src="{% static 'assets/Images/dental.jpg' %}" id="logo" alt="" />
+          <h4>Dental Care</h4>
+          <p>
+            We provide oral surgery, dental x-ray, restorative/conservative
+            dentistry. Also, we offer preventive dentistry, paediatric
+            dentistry, orthodontic dentistry.
+          </p>
+        </div>
+
+        <div class="hep">
+          <img src="{% static 'assets/Images/heart.png' %}" id="logo" alt="pregancy" />
+          <h4>Gynaecology</h4>
+          <p>
+            We provide women health services, pregnacy care, surgical
+            procedures, speciality care. Antenatal care and Post natal care
+            for women before and after birth.
+          </p>
+        </div>
+      </div>
+      <!--End of the sixth div-->
+    </section>
+  </section>
+{% endblock content %}

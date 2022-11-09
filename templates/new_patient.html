@@ -1,0 +1,98 @@
+{% extends 'layout.html'%}
+{% block content%}
+{% load static %}
+<header>
+    <h3>New Patient Registration</h3><hr>
+    <p>Please fill in the form below</p>
+    <!-- <h3>Hospital Name</h3> -->
+</header>
+<div class="container">
+    <form action="">
+        <label for="fname">First Name</label>
+        <input id="fname" name="firstname" placeholder="Patient first name.." type="text">
+
+        <label for="mname"> Middle Name</label>
+        <input id="mname" name="middlename" placeholder="Patient middle name.." type="text">
+
+
+        <label for="lname">Last Name</label>
+        <input id="lname" name="lastname" placeholder="Patient last name.." type="text">
+
+        <label for="aname">Age</label>
+        <input id="aname" name="age" placeholder="Patient age.." type="text">
+
+        <label for="sex">Sex</label>
+        <select name="sex" id="sex">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+
+        <label for="dname">Date</label>
+        <input id="dname" name="date" placeholder="Patient date of test" type="text">
+
+        <label for="adname">Address</label>
+        <input id="adname" name="Address" placeholder="Patient address" type="text">
+
+        <label for="country">Local Government</label>
+        <select name="country" id="country">
+            <option value="KANKE">KANKE</option>
+            <option value="PANSHIN">PANSHIN</option>
+            <option value="MANGU">MANGU</option>
+            <option value="KANAM">KANAM</option>
+            <option value="BOKKOS">BOKKOS</option>
+            <option value="SHANDAM">SHANDAM</option>
+            <option value="JOS NORTH">JOS NORTH</option>
+            <option value="BASA">BASA</option>
+            <option value="JOS SOUTH">JOS SOUTH</option>
+        </select>
+
+        <label for="country">Residence State</label>
+        <input id="state" name="State" placeholder="Patient State of Residence" type="text">
+        
+        <label for="phonenumber">Phone Number</label>
+        <input id="phonenumber" name="phonenumber" placeholder="Phone Number" type="text">
+
+        <label for="email">Email (optional)</label>
+        <input id="email" name="email" placeholder="myname@example.com" type="text">
+
+        <label for="maritalstatus">Marital Status</label>
+        <input id="" name="maritalstatus" placeholder="Marital Status" type="text">
+
+         <h3>In case of Emergency...</h3>
+        <p>Emergency Contact</p>
+        <label for="firstname">First Name</label>
+        <input id="" name="firstname" placeholder="First Name" type="text">
+
+        <label for="lastname">Last Name</label>
+        <input id="" name="lastname" placeholder="Last Name" type="text">
+
+        <label for="relationship">Relationship</label>
+        <input id="" name="relationship" placeholder="Relationship" type="text">
+
+        <label for="phonenumber">Phone Number</label>
+        <input id="phonenumber" name="phonenumber" placeholder="Phone Number" type="text">
+
+        <label for="family doc name">Family Doctor Name</label>
+        <input id="" name="family doc. name" placeholder="Family Doctor Name" type="text">
+
+        <label for="family doc phonenumber">Family Doctor Phone Number</label>
+        <input id="" name="family doc. phonenumber" placeholder="Family Doctor Phone Number" type="text">
+
+        <label for="reason for reg.">Reason for Registration</label>
+        <input id="" name="reason for reg." placeholder="Reason for Registration" type="text">
+
+        <label for="subject">Additional Notes</label>
+        <textarea name="comment" id="subject" placeholder="Additional Notes" cols="30" rows="10"></textarea>
+
+        <label for="subject">Taking medications, currently?</label><br>
+        <input type="radio" name="Yes" value="Yes">Yes<br>
+        <input type="radio" name="No" value="No">No <br><br>
+
+        <label for="subject">If yes, please list it here</label>
+        <textarea name="comment" id="subject" placeholder="Notes" cols="30" rows="10"></textarea>
+
+        <input type="Submit" value="Submit Form">
+    </form>
+</div>
+
+{% endblock content%}

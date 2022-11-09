@@ -1,0 +1,50 @@
+{%extends 'layout.html' %}
+{% block content%}
+{% load static%}
+<div class="container">
+    <div class="registration-form">
+        <h2>Register</h2>
+        <form method="POST" action="">
+            {% csrf_token %}
+
+            <p>First Name</p>
+            {{form.username}}
+            
+            <p>Email</p>
+            <input type="text" name="email" <br>
+            {{form.email}}
+
+            <p>Password</p>
+            {{form.password1}}
+
+            <p> Confirm password</p>
+            {{form.password2}}
+
+            <button type="submit">Register</button>
+        </form>
+
+        {{form.errors}}
+        <p>Already have an account? <a href="/login.html">Log In</a></p>
+    </div>
+</div>
+<script>
+    // query all imput fields
+    var form_fields = document.getElementByTagName('input')
+    forms_fields[1].placeholder='Username..';
+    forms_fields[2].placeholder='Email..';
+    forms_fields[3].placeholder='Enter Password..';
+    forms_fields[4].placeholder='Confirm Password..';
+
+    // for {var field in form.fields}{
+    // form_fields[fields].className += 'form-control'
+    // }
+</script>
+
+</body>
+</html>
+
+{% endblock content%}
+
+
+
+

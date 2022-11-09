@@ -1,0 +1,17 @@
+{%extends 'layout.html' %}
+{% block content%}
+{% load static %}
+<section>
+    <div class="registration-form">
+        <h3>Login</h3>
+        <form action="">
+            <p>Email</p>
+            <input type="email" name="email" id="" placeholder="example@me.com">
+            <p>Password</p>
+            <input type="password" name="password" id="" placeholder="Password">
+            <a href="#"><small>Forgot Password?</small></a><br>
+            <button type="submit">Sign In</button>
+        </form>
+        <p>Don't have an account? <a href="/sign_up.html">Sign Up</a></p>
+    </section>
+    {% endblock content%}

@@ -1,0 +1,35 @@
+{% extends 'layout.html' %}
+{% block content %}
+{% load static %}
+<header>
+    <h3>Make an Appointment</h3>
+</header>
+<div>
+  <div class="container">
+    <form action="">
+      <label for="">Name</label>
+      <input
+        id="fname"
+        name="firstname"
+        placeholder="Patient full nameassets"
+        type="text"
+      />
+
+      <label for="subject">Subject</label>
+      <textarea
+        name="comment"
+        id="subject"
+        placeholder="Message"
+        cols="30"
+        rows="10"
+      ></textarea>
+
+      <input type="Submit" value="Submit"/>
+    </form>
+  </div>
+  <a href="/new_patient"> <input class="end" type="Submit" value="New Appointment"/></a>
+</div>
+</body>
+</html>
+
+{% endblock content%}
